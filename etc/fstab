@@ -11,7 +11,7 @@
 # See the manpage fstab(5) for more information.
 #
 
-# <fs>                  <mountpoint>            <type>          <opts>                                                  <dump/pass>
+# <fs>                          <mountpoint>            <type>          <opts>                                                  <dump/pass>
 
 # NOTE: If your BOOT partition is ReiserFS, add the notail option to opts.
 #
@@ -23,7 +23,7 @@
 #       documentation for details on setting a label. To obtain the UUID, use
 #       the blkid(8) command.
 
-/dev/sda1               /boot/efi               vfat            noauto,noatime                                          1 2
-bpool/BOOT/gentoo       /boot                   zfs             noauto,nodev,relatime                                   1 2
-tmpfs                   /var/lock               tmpfs           rw,nodev,nosuid,size=2G                                 0 0
-
+/dev/disk/by-label/ESP          /boot/efi               vfat            noauto,noatime                                          1 2
+/dev/disk/by-label/ESP_2        /boot/efi_2             vfat            noauto,noatime                                          1 2
+bpool/BOOT/gentoo               /boot                   zfs             noauto,nodev,relatime                                   1 2
+tmpfs                           /var/lock               tmpfs           rw,nodev,nosuid,size=2G                                 0 0
