@@ -3604,8 +3604,8 @@
 # intel/qat/qat_4xxx.bin
 # intel/qat/qat_c62x_mmp.bin
 # intel/qat/qat_c62x.bin
-# intel/qat/qat_c3xxx_mmp.bin
-# intel/qat/qat_c3xxx.bin
+intel/qat/qat_c3xxx_mmp.bin
+intel/qat/qat_c3xxx.bin
 # intel/qat/qat_895xcc_mmp.bin
 # intel/qat/qat_895xcc.bin
 # intel/ibt-00a0-0041-pci.sfi
